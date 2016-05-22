@@ -8,4 +8,10 @@ package com.tweetsec.challenge
 
 class PasswordScore(val originalText: String) {
   val processedText: String = originalText.toLowerCase
+  
+  private[this] val _score: Map[String, Int] = CharHelper.parse(processedText)
+  
+  def value: Int = {
+    _score("typesCount") * _score("wordsCount")
+  }
 }
