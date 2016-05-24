@@ -15,3 +15,6 @@ project/plugins/project/
 # Scala-IDE specific
 .scala_dependencies
 .worksheet
+
+# Twitter4j config file
+twitter4j.properties

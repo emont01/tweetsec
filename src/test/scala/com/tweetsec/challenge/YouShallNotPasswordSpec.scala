@@ -38,4 +38,6 @@ class YouShallNotPasswordSpec extends UnitSpec {
     
     verify(m).updateStatus("@JohnDoe unacceptable password, please try again with a better password!")
   }
+  
+  //FIXME: add tests for some common error responses like statusCode=403, message=Status is a duplicate.
 }
